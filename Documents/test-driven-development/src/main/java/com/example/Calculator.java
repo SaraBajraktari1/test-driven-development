@@ -3,6 +3,10 @@ package com.example;
 public class Calculator {
 
 public boolean isEven(int number) {
-    return false;
+    if (number % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 }
