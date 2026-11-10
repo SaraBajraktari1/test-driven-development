@@ -24,4 +24,14 @@ class DiscountCalculatorTest {
         assertEquals(0, calculator.calculateDiscount(-50, true), DELTA);
         assertEquals(0, calculator.calculateDiscount(-50, false), DELTA);
     }
+
+        @Test
+    void premiumMeShume100Merr20Perqind() {
+        assertEquals(20, calculator.calculateDiscount(100, true), DELTA);
+    }
+
+    @Test
+    void premiumMeShumeMbi100Merr20Perqind() {
+        assertEquals(100, calculator.calculateDiscount(500, true), DELTA);
+    }
 }
