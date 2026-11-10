@@ -7,6 +7,9 @@ public class DiscountCalculator {
         if (isPremium && amount >= 100) {
             return amount * 0.20;
         }
+        if (isPremium) {
+            return amount * 0.10;
+        }
         return 0;
     }
 }
