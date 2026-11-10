@@ -10,6 +10,9 @@ public class DiscountCalculator {
         if (isPremium) {
             return amount * 0.10;
         }
+        if (amount >= 200) {
+            return amount * 0.05;
+        }
         return 0;
     }
 }
